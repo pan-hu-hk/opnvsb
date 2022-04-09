@@ -78,7 +78,8 @@
 
 ### Data Used
 - BTCUSD is used for back-testing as it is one of the most liquid names
-- By examining the data, it is clear that the data before 2017 March is not that continuous 
+- By examining the data, it is clear that the data before 2017 March is not that continuous
+  ![Monthly Count](https://raw.github.com/pan-hu-hk/opnvsb/master/image/monthly.count.png)
 - Therefore, the data used for back-testing starts from March 1st, 2017
 - Starting cash balance is set as 100,000 USD
 
@@ -103,6 +104,7 @@
 - Upon checking of the data, it is clearly that the model doesn't do a good job for volatile cryptocurrencies
 - Below is the plot of close and predicted close price in February 2020 and March 2020
 - It is clear that during second half of March, the prediction is basically capped
+  ![2020 Feb-Mar](https://raw.github.com/pan-hu-hk/opnvsb/master/image/lstm.2022.Feb.Mar.png)
 - The issue is that the model can only predict what it has seen before
 - If the price goes beyond the previous range, it cannot do anything about it
 - One way to fix this is to predict the close to open change instead of the actual price
